@@ -60,18 +60,18 @@ const catContainer = document.querySelector(".cat-container");
     let html = "";
   
     for (let i = 0; i < cats.length; i++) {
-      let theCatsAge = "";
+      let Age = "";
   
       if (cats[i].age) {
-        theCatsAge = cats[i].age;
+        Age = cats[i].age;
       } else {
-        theCatsAge = " Unknown";
+        Age = " Unknown";
       }
   
       html += `
       <div>
       <h5>Name: ${cats[i].name}</h5>
-      <p>Age: ${theCatsAge}</p>
+      <p>Age: ${Age}</p>
       </div>
       `;
     }
